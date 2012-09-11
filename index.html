@@ -26,10 +26,11 @@
 
             $(function() {
 
+                var limit = 15;
                 var $container = $( '.quotes' );
 
                 // Populate
-                for ( var i = 0, n = quotes.length; i < n; i++ ) {
+                for ( var i = 0, n = Math.min( limit, quotes.length ); i < n; i++ ) {
 
                     $container.append(
                         '<article>' +

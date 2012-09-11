@@ -56,7 +56,7 @@ var quotes = [
         "quote": "I love forms beyond my own, and regret the borders between us"
     },
     {
-        "author": "Philip K",
+        "author": "Philip K Dick",
         "quote": "The bedrock basic stratum of reality is irreality; the universe is irrational because it is built not on mere shifting sand - but on that which is not"
     },
     {
