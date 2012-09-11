@@ -1,0 +1,108 @@
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html, body {
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    backface-visibility: hidden;
+    font-family: Consolas, monospace;
+    background: #f2f2f2;
+    padding: 0;
+    margin: 0;
+}
+
+/* Info */
+
+#info {
+    font-size: 12px;
+    position: absolute;
+    z-index: 1;
+    color: #fff;
+    width: 260px;
+    left: 20px;
+    top: 20px;
+}
+
+#info a {
+    text-decoration: none;
+    border-bottom: 1px dotted rgba(255, 255, 255, 0.2);
+    color: rgba(255, 255, 255, 0.5);
+}
+
+#info a:hover {
+    color: #fff;
+}
+
+#info header, #info aside {
+    font-family: 'Play', sans-serif;
+    background: rgba(0, 0, 0, 0.8);
+    margin-bottom: 1px;
+}
+
+#info header {
+    padding: 12px 10px;
+}
+
+#info header hgroup h1 {
+    line-height: 22px;
+    font-weight: 300;
+    font-size: 18px;
+    margin: 0;
+}
+
+#info header hgroup h2 {
+    line-height: 14px;
+    font-weight: 300;
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.8);
+    margin: 0 0 6px 0;
+}
+
+#info header a {
+    text-transform: uppercase;
+    margin-right: 4px;
+    line-height: 20px;
+    font-size: 10px;
+}
+
+#info aside {
+    padding: 2px 10px;
+}
+
+/* Demo */
+
+.quotes {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    left: 0;
+    top: 20px;
+}
+
+.quotes article {
+    border-bottom: 1px dashed #ddd;
+    text-align: justify;
+    line-height: 1.8;
+    background: #fff;
+    max-width: 620px;
+    font-size: 14px;
+    padding: 80px 40px;
+    margin: 0 auto;
+    width: 600px;
+    color: #333;
+}
+
+.quotes article em {
+    font-style: normal;
+    font-size: 12px;
+    color: #666;
+}
+
+.quotes article em:before {
+    content: '~';
+    margin: 0 10px;
+}
