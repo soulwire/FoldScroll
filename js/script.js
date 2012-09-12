@@ -11,7 +11,7 @@
         var opts = $.extend( {}, $.fn.foldscroll.defaults, options );
 
         // Transformation template
-        var rot = 'perspective(' + opts.perspective + ') rotateX(θrad)';
+        var rot = 'perspective(' + opts.perspective + 'px) rotateX(θrad)';
 
         // Main plugin loop
         return this.each( function () {
@@ -39,7 +39,8 @@
 
                     $item = $(this);
                     $item.css( prefix({
-                        'backface-visibility': 'hidden'
+                        'backface-visibility': 'hidden',
+                        'transform-style': 'preserve-3d' // Fixes perspective in FF 10+
                     }));
 
                     // Make sure shading isn't already applied
