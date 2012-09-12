@@ -6,9 +6,6 @@
 }
 
 html, body {
-    -webkit-backface-visibility: hidden;
-    -moz-backface-visibility: hidden;
-    backface-visibility: hidden;
     font-family: Consolas, monospace;
     background: #f2f2f2;
     padding: 0;
