@@ -82,6 +82,7 @@
             $this.css( prefix({ 'backface-visibility': 'hidden' }));
             $this.css({ overflow: 'scroll' });
 
+            // Scroll handler
             $this.on( 'scroll', function() {
 
                 // Store scroll amount
@@ -124,19 +125,22 @@
                     // If there's overlap
                     if ( show ) {
 
-                        // compute overlap
+                        // Compute overlap
                         var o = b - a;
+
+                        // Fraction of viewport covered by overlap
                         var p = o / vh;
 
+                        // If overlap is within margin
                         if ( p < m ) {
 
-                            // normalise
+                            // Normalise
                             p = p / m;
 
-                            // direction
+                            // Direction
                             var d = et < vt ? 1 : -1;
 
-                            // rotation
+                            // Rotation
                             var t = ( 1 - p ) * HALF_PI * d;
 
                             // Contrain rotation
