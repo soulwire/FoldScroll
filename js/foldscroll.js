@@ -80,7 +80,7 @@
 
             // Prepare container
             $this.css( prefix({ 'backface-visibility': 'hidden' }));
-            $this.css({ overflow: 'scroll' });
+            $this.css({ overflowY: 'scroll' });
 
             // Scroll handler
             $this.on( 'scroll', function() {
