@@ -148,7 +148,7 @@
 
                                 // Apply rotation
                                 $item.css( prefix({
-                                    'transform-origin': '50%' + ( et < vt ? '100%' : '0%' ),
+                                    'transform-origin': '50% ' + ( et < vt ? '100%' : '0%' ),
                                     'transform': rot.replace( 'θ', t )
                                 }));
 
