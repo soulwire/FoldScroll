@@ -89,7 +89,7 @@ html, body {
     font-size: 14px;
     padding: 80px 40px;
     margin: 0 auto;
-    width: 600px;
+    width: 80%;
     color: #333;
 }
 
@@ -102,4 +102,15 @@ html, body {
 .quotes article em:before {
     content: '~';
     margin: 0 10px;
+}
+
+@media (max-width: 600px) {
+    .quotes article {
+        padding: 60px 30px;
+        line-height: 1.5;
+        font-size: 12px;
+    }
+    .quotes article em {
+        font-size: 10px;
+    }
 }
